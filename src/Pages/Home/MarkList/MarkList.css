@@ -1,0 +1,83 @@
+
+.markListWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    flex: 1;
+    border-radius: 10px;
+    height: calc(100vh - 450px);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.markListItems {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    margin-left: 10px;
+    max-height: 400px;
+    overflow: auto;
+
+}
+
+.markListItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.markListItem label {
+    font-size: 18px;
+    text-wrap: nowrap;
+    color: rgba(0, 0, 0, 0.626);
+}
+
+.markListItem input {
+    font-size: 18px;
+    text-wrap: nowrap;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+    background-color: aliceblue;
+    outline: none;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+.markListItemInput {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.removeIcon svg {
+    cursor: pointer;
+    fill: rgba(255, 0, 0, 0.529);
+    /* height: 30px;
+    width: 30px; */
+}
+
+.addIcon svg {
+    cursor: pointer;
+    fill: #789DBC;
+    /* height: 30px;
+    width: 30px; */
+}
+
+.markListItemInputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.invalidInputMessage {
+    font-size: 12px;
+    margin-left: 12px;
+    color: red;
+}
+.errorInput{
+    border-color: red !important;
+}
